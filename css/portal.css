@@ -1,0 +1,63 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.headerbox {
+    border-radius: 15px;
+    background: rgb(121, 98, 68);
+    padding: 20px;
+    width: 60%;
+    height: 50px;
+    align-items: center;
+    margin: auto;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: bold;
+    color: cornsilk;
+    padding-left: 5%;
+}
+
+.imagefloat {
+    float: right;
+    box-shadow: 4px 4px 4px black;
+}
+
+.content {
+    padding: 20px;
+    width: 60%;
+    height: auto;
+    margin: auto;
+}
+
+.footerbox {
+    border-radius: 15px;
+    background: rgb(121, 98, 68);
+    padding: 20px;
+    width: 60%;
+    height: 30px;
+    align-items: center;
+    margin: auto;
+}
+
+.footer {
+    font-size: small;
+    color: cornsilk;
+    text-align: center;
+}
+
+a.footer   {
+    color: cornsilk;
+}
+
+a.footer:hover {
+    color: yellow;
+}
+.updated {
+    font-size: x-small;
+    color: cornsilk;
+    text-align: center;
+}
