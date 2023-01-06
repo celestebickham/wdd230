@@ -2,85 +2,108 @@
     h1 {
         font-size: 2.5rem;
         margin: 1rem;
-        color: white;
+        color: black;
     }
-}
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
 
-header {
-    max-width: 640px;
-    margin: 1rem auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    border: 1px black;
-    padding: 1px;
-    background-color: steelblue;
-    border-radius: 25px;
-    border: 2px solid darkblue;
-    padding: 20px;
-    box-shadow: 10px 10px 5px lightblue;
-}
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
 
-nav {
-    max-width: 640px;
-    margin: 1rem auto;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    padding: 1px;
-    border: 1px black;
-    padding: 1px;
-    background-color: steelblue;
-    border-radius: 25px;
-    border: 2px solid darkblue;
-    padding: 20px;
-    box-shadow: 10px 10px 5px lightblue;
-    -ms-flex: 1;
-    /* IE 10 */
-    flex: 1;
-}
+    nav {
+        max-width: 640px;
+        margin: 1rem auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 1px;
+        border: 1px black;
+        padding: 1px;
+        background-color: steelblue;
+        border-radius: 25px;
+        border: 2px solid darkblue;
+        padding: 20px;
+        box-shadow: 10px 10px 5px lightblue;
+        -ms-flex: 1;
+        /* IE 10 */
+        flex: 1;
+    }
 
-a:link {
-    color: black;
-}
+    header {
+        max-width: 640px;
+        margin: 1rem auto;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border: 1px black;
+        padding: 1px;
+        background-color: steelblue;
+        border-radius: 25px;
+        border: 2px solid darkblue;
+        padding: 20px;
+        box-shadow: 10px 10px 5px lightblue;
+    }
 
-main {
-    max-width: 640px;
-    margin: 1rem auto;
-    border: 1px black;
-    padding: 1px;
-    background-color: steelblue;
-    border-radius: 25px;
-    border: 2px solid darkblue;
-    padding: 20px;
-    box-shadow: 10px 10px 5px lightblue;
-    grid-template-columns: 1fr 1fr;
-}
 
-footer {
-    max-width: 640px;
-    margin: 1rem auto;
-    border: 1px black;
-    padding: 1px;
-    background-color: white;
-    border-radius: 25px;
-    border: 2px solid darkblue;
-    padding: 20px;
-    box-shadow: 10px 10px 5px lightblue;
-}
 
-section {
-    background-color: white;
-    padding: 2rem;
-    border-radius: 25px;
-    border: 2px solid black;
-    padding: 1px;
-}
+    a:link {
+        color: black;
+    }
 
-ul {
-    list-style-type: none;
+    main {
+        max-width: 640px;
+        margin: 1rem auto;
+        border: 1px black;
+        padding: 1px;
+        background-color: steelblue;
+        border-radius: 25px;
+        border: 2px solid darkblue;
+        padding: 20px;
+        box-shadow: 10px 10px 5px lightblue;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        max-width: 640px;
+        margin: 1rem auto;
+        border: 1px black;
+        padding: 1px;
+        background-color: white;
+        border-radius: 25px;
+        border: 2px solid darkblue;
+        padding: 20px;
+        box-shadow: 10px 10px 5px lightblue;
+    }
+
+    section {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 25px;
+        border: 2px solid black;
+        padding: 1px;
+        list-style-type: none;
+    }
+
+    ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+
+    li.nav {
+        float: left;
+    }
+
+    li.nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    /* Change the link color to #111 (black) on hover */
+    li.nav a:hover {
+        background-color: #111;
+    }
 }
