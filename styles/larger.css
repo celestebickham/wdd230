@@ -1,0 +1,86 @@
+@media only screen and (min-width: 650px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 1rem;
+        color: white;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    max-width: 640px;
+    margin: 1rem auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 1px black;
+    padding: 1px;
+    background-color: steelblue;
+    border-radius: 25px;
+    border: 2px solid darkblue;
+    padding: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+nav {
+    max-width: 640px;
+    margin: 1rem auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1px;
+    border: 1px black;
+    padding: 1px;
+    background-color: steelblue;
+    border-radius: 25px;
+    border: 2px solid darkblue;
+    padding: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    -ms-flex: 1;
+    /* IE 10 */
+    flex: 1;
+}
+
+a:link {
+    color: black;
+}
+
+main {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px black;
+    padding: 1px;
+    background-color: steelblue;
+    border-radius: 25px;
+    border: 2px solid darkblue;
+    padding: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px black;
+    padding: 1px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid darkblue;
+    padding: 20px;
+    box-shadow: 10px 10px 5px lightblue;
+}
+
+section {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 1px;
+}
+
+ul {
+    list-style-type: none;
+}
