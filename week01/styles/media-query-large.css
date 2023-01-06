@@ -1,0 +1,45 @@
+@media only screen and (min-width: 500px) {
+    h1 {
+        font-size: 2rem;
+        margin: 1rem;
+        color: white;
+    }
+}
+
+body {
+    font-family: Roboto;
+}
+
+header {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px antiquewhite;
+    padding: 4px;
+    background-color: black;
+}
+
+main {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px antiquewhite;
+    padding: 4px;
+    background-color: cornflowerblue;
+    grid-template-columns: 1fr 1fr;
+}
+
+footer {
+    max-width: 640px;
+    margin: 1rem auto;
+    border: 1px antiquewhite;
+    padding: 4px;
+    background-color: cornflowerblue;
+}
+
+section {
+    background-color: white;
+    padding: 1rem;
+    border-color: cornflowerblue;
+    border-width: 4px;
+    border-style: solid;
+    display: block;
+}
