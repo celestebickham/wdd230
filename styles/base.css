@@ -7,15 +7,14 @@ nav {
     margin: 1rem auto;
     margin-left: auto;
     margin-right: auto;
+    color: rgb(25, 63, 92);
     text-align: center;
     padding: 1px;
-    border: 1px black;
-    padding: 1px;
-    background-color: steelblue;
+    background-color: rgb(195, 223, 245);
     border-radius: 25px;
-    border: 2px solid darkblue;
+    border: 2px solid rgb(25, 63, 92);
     padding: 20px;
-    box-shadow: 10px 10px 5px lightblue;
+    box-shadow: 10px 10px 5px rgb(146, 166, 180);
     -ms-flex: 1;
     /* IE 10 */
     flex: 1;
@@ -26,14 +25,13 @@ header {
     margin: 1rem auto;
     margin-left: auto;
     margin-right: auto;
+    color: rgb(25, 63, 92);
     text-align: center;
-    border: 1px black;
-    padding: 1px;
-    background-color: steelblue;
+    background-color: rgb(195, 223, 245);
     border-radius: 25px;
-    border: 2px solid darkblue;
+    border: 2px solid rgb(25, 63, 92);
     padding: 20px;
-    box-shadow: 10px 10px 5px lightblue;
+    box-shadow: 10px 10px 5px rgb(146, 166, 180);
 }
 
 a:link {
@@ -43,34 +41,42 @@ a:link {
 main {
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px black;
-    padding: 1px;
-    background-color: steelblue;
+    color: rgb(25, 63, 92);
+    background-color: rgb(195, 223, 245);
     border-radius: 25px;
-    border: 2px solid darkblue;
+    border: 2px solid rgb(25, 63, 92);
     padding: 20px;
-    box-shadow: 10px 10px 5px lightblue;
+    box-shadow: 10px 10px 5px rgb(146, 166, 180);
     grid-template-columns: 1fr 1fr;
 }
 
 footer {
     max-width: 640px;
     margin: 1rem auto;
-    border: 1px black;
-    padding: 1px;
-    background-color: white;
+    color: rgb(25, 63, 92);
+    background-color: rgb(195, 223, 245);
     border-radius: 25px;
-    border: 2px solid darkblue;
+    border: 2px solid rgb(25, 63, 92);
     padding: 20px;
+    box-shadow: 10px 10px 5px rgb(146, 166, 180);
 }
 
 section {
     background-color: white;
+    color: rgb(25, 63, 92);
     padding: 2rem;
     border-radius: 25px;
-    border: 2px solid black;
+    border: 2px solid rgb(25, 63, 92);
     padding: 1px;
     list-style-type: none;
+}
+
+#darkness1 {
+    background-color: white;
+}
+
+#darkness2 {
+    background-color: white;
 }
 
 ul {
@@ -87,4 +93,54 @@ li.nav a {
 li.nav a:hover {
     background-color: #555;
     color: white;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    z-index: 10;
+    overflow: hidden;
+    text-align: left;
+}
+
+.menu li a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding: 1rem;
+    position: relative;
+    transition: background 0.5s ease-in-out;
+}
+
+.menu li a:hover {
+    background-color: wheat;
+}
+
+.menu li:first-child a {
+    background-color: rgb(195, 223, 245);
+    color: black;
+}
+
+.active {
+    font-weight: 700;
+}
+
+li a.menu-item {
+    display: none;
+}
+
+li a.open {
+    display: flex;
+}
+
+.close::before {
+    content: "❌ ";
+}
+
+.mode {
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: right;
 }

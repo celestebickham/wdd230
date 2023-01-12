@@ -6,29 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WDD 230 - Portal -Celeste Bickham</title>
+    <meta name="description" content="WDD230 Celeste Bickham course assignment portal">
+    <meta name="author" content="Celeste Bickham">
+
     <meta property="og:title" content="WDD 230 - Portal -Celeste Bickham">
     <meta property="og:type" content="website">
     <meta property="og:img" content="images/balloons.png">
-    <meta name="description" content="WDD230 Celeste Bickham course assignment portal">
     <meta property="og:url" content="https://celestebickham.github.io/wdd230/" />
-    <meta name="author" content="Celeste Bickham">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
+
+    <script src="https://kit.fontawesome.com/0988bb3aac.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
     <nav>
-        <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-            <path d="M6 36v-3h36v3Zm0-10.5v-3h36v3ZM6 15v-3h36v3Z" />
-        </svg><br>
-        <ul>
-            <li class="nav">
-                <a href="http://linkedin.com">Linked In</a>
+        <div id="mode">❎ Dark Mode Off</div>
+        <ul class="menu">
+            <li><a href="#" id="menu-button"><i class="fa-sharp fa-solid fa-bars"></i></a></li>
+
+            <li>
+                <a href="http://linkedin.com" class="menu-item">LinkedIn</a>
             </li>
-            <li class="nav"><a href="http://www.byui.edu">BYU Idaho</a></li>
+            <li>
+                <a href="http://byui.edu" class="menu-item">BYU Idaho</a>
+            </li>
+
         </ul>
+
     </nav>
 
     <header>
@@ -40,29 +49,38 @@
 
     <main>
         <section class="card" id="main">
-            <h3>Learning Activities</h3>
-            <ul>
-                <li>Week 01: <a href="week01/holygrail.html">Holy Grail</a> | <a href="week01/media-query.html">Media
-                        Query</a> | <a href="https://codepen.io/celestebickham/pen/qByqrRj">Code Pen - Applied
-                        JavaScript
-                        Activity</a></li>
-                <li>Week 02: <a href="week02/design.html">Design</a></li> | <a
-                    href="https://codepen.io/celestebickham/pen/QWBpYjX">Code Pen - Responsive Menu</a>
-                <li>Week 03:</li>
-                <li>Week 04:</li>
-                <li>Week 05:</li>
-                <li>Week 06:</li>
+            <h3>Learning Activities:</h3>
+            <li>
+            <li>Week 01:
+                <ul>
+                    <li><a href="week01/holygrail.html">Holy Grail</a></li>
+                    <li><a href="week01/media-query.html">Media Query</a></li>
+                    <li><a href="https://codepen.io/celestebickham/pen/qByqrRj">Code Pen - Applied JavaScript
+                            Activity</a></li>
+                </ul>
+            </li>
+            <li>Week 02:
+                <ul>
+                    <li><a href="week02/design.html">Design</a></li>
+                    <li><a href="https://codepen.io/celestebickham/pen/QWBpYjX">Code Pen - Responsive Menu</a></li>
+                    <li><a href="week02/bom.html">Book of Mormon Top 25</a></li>
+                </ul>
+            </li>
+            <li>Week 03:</li>
+            <li>Week 04:</li>
+            <li>Week 05:</li>
+            <li>Week 06:</li>
             </ul>
         </section>
-        <section class="card" id="right1">
-            <h3>Project</h3>
+        <section class="card" id="darkmode1">
+            <h3>Project:</h3>
             <ul>
                 <li><a href="week01/chamber-site-plan.html">Indianola Chamber of Commerce</a></li>
             </ul>
 
         </section>
-        <section class="card" id="right2">
-            <h3>Information</h3>
+        <section class="card" id="darkmode2">
+            <h3>Information:</h3>
         </section>
     </main>
 
@@ -71,7 +89,9 @@
         <p class="highlight" id="lastmodified"></p>
     </footer>
 
+    <script src="scripts/hamburger.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkmode.js"></script>
 
 </body>
 
