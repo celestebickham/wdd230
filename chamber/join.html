@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber Base page </title>
+
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/weather.css">
+
+    <script src="https://kit.fontawesome.com/0988bb3aac.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <menu>
+                <ul class="menu">
+                    <li>
+                        <a href="#" id="menu-button"><i class="fa-sharp fa-solid fa-bars"></i></a>
+                    </li>
+                    <li>
+                        <a href="chamber.html" class="menu-item">Home</a>
+                    </li>
+                    <li>
+                        <a href="http://linkedin.com" class="menu-item">LinkedIn</a>
+                    </li>
+                    <li>
+                        <a href="http://byui.edu" class="menu-item">BYU Idaho</a>
+                    </li>
+                    <li>
+                        <a href="../index.html" class="menu-item">Class Portal</a>
+                    </li>
+                </ul>
+            </menu>
+        </nav>
+        <h1 id="dark">Chamber of Commerce for Cold Days</h1>
+    </header>
+
+
+    <main>
+        <section id="main">
+            <h3 id="dark2">Join the Chamber</h3>
+
+            <form>
+                Name: <input type="text">
+                <input type="button" value="Join Us Now!" onclick="myDarkSide()">
+            </form>
+            <script>
+                function myDarkSide() {
+                    document.getElementById("dark").innerHTML = "Welcome to the Dark Side!";
+                    document.getElementById("dark2").innerHTML = "You WILL be happy here.";
+                }
+            </script>
+        </section>
+
+    </main>
+    <footer contenteditable>
+        <p id="copyright">copyright date name</p>
+        <p class="highlight" id="lastmodified"></p>
+    </footer>
+    <script src="scripts/menu.js"></script>
+</body>
+
+</html>
