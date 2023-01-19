@@ -17,6 +17,7 @@
     background: radial-gradient(#fff, steelblue);
     border: 1px solid rgba(0, 0, 0, .75);
     padding: .2rem;
+    padding-inline: 20px;
     box-shadow: 0 0 3rem #fff;
     opacity: 0.50;
     text-align: center;
