@@ -11,8 +11,8 @@
 }
 
 .herolabel {
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 600px;
     background: radial-gradient(#fff, steelblue);
     border: 1px solid rgba(0, 0, 0, .75);
     padding: .2rem;
