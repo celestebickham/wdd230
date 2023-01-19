@@ -1,0 +1,36 @@
+.hero {
+    margin: 1px auto;
+    position: center;
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 1px solid black;
+}
+
+.herolabel {
+    position: relative;
+    top: 100px;
+    background: radial-gradient(#fff, steelblue);
+    border: 1px solid rgba(0, 0, 0, .75);
+    padding: .2rem;
+    box-shadow: 0 0 3rem #fff;
+    opacity: 0.50;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.herolabel p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: serif;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

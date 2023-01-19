@@ -40,15 +40,37 @@ a:link {
 }
 
 main {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 'temple'
+        'learning'
+        'project'
+        'information';
     max-width: 640px;
     margin: 1rem auto;
     color: rgb(25, 63, 92);
     background-color: rgb(195, 223, 245);
     border-radius: 25px;
     border: 2px solid rgb(25, 63, 92);
-    padding: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
     box-shadow: 10px 10px 5px rgb(146, 166, 180);
-    grid-template-columns: 1fr 1fr;
+}
+
+.temple {
+    grid-area: temple;
+}
+
+.learning {
+    grid-template-areas: 'learning';
+}
+
+.project {
+    grid-area: project;
+}
+
+.information {
+    grid-area: information;
 }
 
 footer {

@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/temple.css">
+
 
     <script src="https://kit.fontawesome.com/0988bb3aac.js" crossorigin="anonymous"></script>
 
@@ -48,8 +50,21 @@
     </header>
 
     <main>
-        <picture></picture>
-        <section class="card" id="main">
+        <div class="temple">
+            <div class="hero">
+                <div class="herolabel">
+                    <p>Winter Quarters Temple</p>
+                </div>
+                <picture>
+
+                    <source media="(max-width: 600px)" srcset="images/winter-quarters-temple400.webp 1x">
+                    <img src="images/winter-quarters-temple600.webp" alt="Winter Quaters" loading="lazy">
+
+                </picture>
+            </div>
+        </div>
+
+        <section class="learning">
             <h3>Learning Activities:</h3>
             <li>
             <li>Week 01:
@@ -80,7 +95,7 @@
             <li>Week 06:</li>
             </ul>
         </section>
-        <section class="card" id="darkmode1">
+        <section class="project" id="darkmode1">
             <h3>Project:</h3>
             <ul>
                 <li><a href="week01/chamber-site-plan.html">Indianola Chamber of Commerce Site Plan</a></li>
@@ -88,19 +103,28 @@
             </ul>
 
         </section>
-        <section class="card" id="darkmode2">
+        <section class="information" id="darkmode2">
             <h3>Information:</h3>
         </section>
     </main>
 
+    <div class="center">
+        <iframe style='width:600px; height:450px;' id='gmap_canvas'
+            src='https://maps.google.com/maps?q=Indianola%20IA%0A%0A&t=&z=13&ie=UTF8&output=embed' frameborder='0'
+            scrolling='no' marginheight='0' marginwidth='0'></iframe>
+
+    </div>
+
     <footer>
         <p id="copyright">copyright date name</p>
         <p class="highlight" id="lastmodified"></p>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/getDates.js"></script>
     <script src="scripts/darkmode.js"></script>
+    <script src="scripts/counter.js"></script>
 
 </body>
 
