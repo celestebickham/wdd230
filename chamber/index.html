@@ -16,7 +16,7 @@
 
     <meta property="og:title" content="Indianola Chamber of Commerce Home Page">
     <meta property="og:type" content="website">
-    <meta property="og:img" content="images/balloons.png">
+    <meta property="og:img" content="images/balloons.webp">
     <meta property="og:url" content="https://celestebickham.github.io/wdd230/chamber/index.html" />
 
     <script src="https://kit.fontawesome.com/0988bb3aac.js" crossorigin="anonymous"></script>
@@ -24,7 +24,7 @@
 
 <body>
     <nav>
-        <div id="mode">❎ Dark Mode Off</div>
+
         <ul class="menu">
             <li><a href="#" id="menu-button"><i class="fa-sharp fa-solid fa-bars"></i></a></li>
 
@@ -46,7 +46,12 @@
     </nav>
 
     <header>
-        <img src="images/balloons.png" width="639" height="426" alt="Balloon Festival">
+        <picture>
+
+            <source media="(max-width: 650px)" srcset="images/balloonssmall.webp 1x">
+            <img src="images/balloonslarge.webp" alt="Balloon Festival" loading="lazy">
+
+        </picture>
         <h1 contenteditable>Indianola Chamber of Commerce</h1>
 
         <h2>WDD 230: Course Activity Portal</h2>
@@ -54,20 +59,21 @@
 
 
     <main>
-        <section id="main">
+        <section id="join">
             <h1>Join the Chamber</h1>
             <a href="join.html"><img src="images/join.png" alt="Join Button"></a>
         </section>
-        <section id="events">
-            <h3>Current Events</h3>
-            <p>Placeholder</p>
 
-        </section>
         <section id="weather">
             <h3>Weather</h3>
             <p>Placeholder</p>
         </section>
-        <section id="spotlight">
+        <section id="central">
+            <h3>Current Events</h3>
+            <p>Placeholder</p>
+
+        </section>
+        <section id="sidebar">
             <h3>Spotlight</h3>
             <p>Placeholder</p>
         </section>
@@ -87,6 +93,7 @@
 
 
     <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
     <script src="scripts/getdates.js"></script>
 </body>
 
