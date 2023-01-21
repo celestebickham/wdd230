@@ -43,10 +43,6 @@ main {
     font-family: serif;
 }
 
-.hover:hover {
-    box-shadow: 0 0 20px #333;
-}
-
 footer {
     max-width: 400px;
     margin: 1rem auto;
@@ -68,7 +64,6 @@ section {
     z-index: 10;
     overflow: hidden;
     text-align: left;
-
 }
 
 .menu li a {
@@ -104,10 +99,8 @@ li a.open {
     content: "";
 }
 
-
 .mode {
     font-size: 2rem;
     cursor: pointer;
     text-align: right;
-
 }
