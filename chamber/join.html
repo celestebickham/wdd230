@@ -5,64 +5,156 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber Base page </title>
+    <title>Indianola Chamber of Commerce Home Page</title>
+    <meta name="description" content="Indianola Chamber of Commerce Home Page">
+    <meta name="author" content="Celeste Bickham">
 
-    <link rel="stylesheet" href="styles/chamber.css">
-    <link rel="stylesheet" href="styles/weather.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Indianola Chamber of Commerce Home Page">
+    <meta property="og:type" content="website">
+    <meta property="og:img" content="images/balloons.webp">
+    <meta property="og:url" content="https://celestebickham.github.io/wdd230/chamber/index.html" />
 
     <script src="https://kit.fontawesome.com/0988bb3aac.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
+    <nav>
+
+        <ul class="menu">
+            <li><a href="#" id="menu-button"><i class="fa-sharp fa-solid fa-bars"></i></a></li>
+
+            <li>
+                <a href="index.html" class="menu-item">Home</a>
+            </li>
+            <li>
+                <a href="discover.html" class="menu-item">Discover</a>
+            </li>
+            <li>
+                <a href="directory.html" class="menu-item">Directory</a>
+            </li>
+            <li>
+                <a href="join.html" class="menu-item">Join</a>
+            </li>
+
+        </ul>
+
+    </nav>
 
     <header>
-        <nav>
-            <menu>
-                <ul class="menu">
-                    <li>
-                        <a href="#" id="menu-button"><i class="fa-sharp fa-solid fa-bars"></i></a>
-                    </li>
-                    <li>
-                        <a href="chamber.html" class="menu-item">Home</a>
-                    </li>
-                    <li>
-                        <a href="http://linkedin.com" class="menu-item">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="http://byui.edu" class="menu-item">BYU Idaho</a>
-                    </li>
-                    <li>
-                        <a href="../index.html" class="menu-item">Class Portal</a>
-                    </li>
-                </ul>
-            </menu>
-        </nav>
-        <h1 id="dark">Indianola Chamber of Commerce</h1>
+        <picture>
+
+            <source media="(max-width: 650px)" srcset="images/balloonssmall.webp 1x">
+            <img src="images/balloonslarge.webp" alt="Balloon Festival" loading="lazy">
+
+        </picture>
+        <h1 contenteditable>Indianola Chamber of Commerce</h1>
+
+        <h2>WDD 230: Course Activity Portal</h2>
     </header>
 
-
     <main>
-        <section id="main">
-            <h3 id="dark2">Join the Chamber</h3>
+        <section id="join">
+            <form action="thankyou.html" method="get">
+                <table>
+                    <thead>
+                        <tr>
+                            <th colspan="2" scope="colgroup">
+                                <h3>Join the Chamber</h3>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><label for="first">First Name: </label></td>
+                            <td><input type="textbox" name="first" id="" width="20" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="last">Last Name: </label></td>
+                            <td><input type="textbox" name="last" id="" width="20" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="title">Business Position Title: </label></td>
+                            <td><input type="textbox" name="title" minlength="7" pattern="[a-zA-Z0-9 -]+" width="20"
+                                    required></td>
+                        </tr>
 
-            <form>
-                Name: <input type="text">
-                <input type="button" value="Join Us Now!" onclick="myDarkSide()">
+                        <tr>
+                            <td><label for="email">Email: </label></td>
+                            <td><input type="email" name="email" width="20" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="cell">Cell Phone No: </label></td>
+                            <td><input type="tel" name="cell" width="20" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="business">Business Name/Title: </label></td>
+                            <td><input type="textbox" name="business" required></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="member">Membership Level: </label></td>
+                            <td><select name="member" onChange="memberBenefits(this.value)">
+                                    <option value="">Select a Member Level</option>
+                                    <option value="gold">Gold</option>
+                                    <option value="silver">Silver</option>
+                                    <option value="bronze">Bronze</option>
+                                    <option value="npmembership">Non-Profit Membership</option>
+                                </select></td>
+                        </tr>
+
+                        <tr>
+                            <td><label for="description">Business Description: </label></td>
+                            <td><textarea name="description" cols="20" rows="4"></textarea></td>
+                        </tr>
+
+                        <tr>
+                            <td></td>
+                            <td><input type="hidden" name="datetime" id="loadtime">
+                                <input type="submit" value="Submit to Joining the Chamber">
+                            </td>
+                        </tr>
+
+                        </div>
+                    </tbody>
+                </table>
             </form>
-            <script>
-                function myDarkSide() {
-                    document.getElementById("dark").innerHTML = "Welcome to the Dark Side!";
-                    document.getElementById("dark2").innerHTML = "You WILL be happy here.";
-                }
-            </script>
+
+        </section>
+
+        <section class="weather">
+            <div id="displayform" class="span">
+                <dl>
+                    <dt><span id="level"></span> Member Level Information</dt>
+                    <dd id="memberinfo">Select a value from the form on the left</dd>
+                    <dt>Cost</dt>
+                    <dd id="membercost">-</dd>
+                </dl>
+            </div>
         </section>
 
     </main>
-    <footer contenteditable>
-        <p id="copyright">copyright date name</p>
+    <footer>
+
+        <ul style="list-style-type:none;">
+            <li>Celeste Bickham</li>
+            <li>Phone: 555-555-5555</li>
+            <li>Email: contact.us@gmail.com</li>
+            <li>Wdd 230</li>
+        </ul>
+
         <p class="highlight" id="lastmodified"></p>
     </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
 </body>
 
