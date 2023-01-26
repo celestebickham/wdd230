@@ -1,4 +1,86 @@
 @media only screen and (min-width: 650px) {
+    :root {
+        --back: rgb(240, 237, 237);
+        --back2: rgb(48, 48, 48);
+        --header: black;
+        --headtext: white;
+        --bodytext: yellow;
+        --border: white;
+    }
+
+    table {
+        margin: auto;
+        border: none;
+        border-spacing: 0px;
+    }
+
+    th {
+        background-color: var(--header);
+        padding: 10px;
+        color: var(--headtext);
+        text-align: center;
+    }
+
+    .head {
+        margin: 0px auto;
+        background-color: var(--back);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: var(--header);
+        text-align: center;
+        font-weight: 700;
+        font-size: larger;
+    }
+
+    .body {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin: 0px auto;
+        background-color: var(--back);
+        color: var(--header);
+    }
+
+    td {
+        border-top: 1px solid white;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        margin: 0px;
+    }
+
+    .left {
+
+        background-color: var(--back2);
+        padding: 10px;
+        color: var(--bodytext);
+        text-align: right;
+        font-weight: 500;
+        font-size: medium;
+    }
+
+    .right {
+
+        background-color: var(--back2);
+        padding: 10px;
+        color: var(--headtext);
+        text-align: left;
+        font-weight: 500;
+        font-size: medium;
+    }
+
+    caption {
+        padding: 10px;
+        caption-side: bottom;
+        color: var(--foredark);
+        font-size: .85rem;
+    }
+
+    .span {
+        display: none;
+    }
+
     h1 {
         font-size: 2.5rem;
         margin: 1rem;

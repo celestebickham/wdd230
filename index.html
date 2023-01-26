@@ -122,16 +122,128 @@
 
     </div>
 
-    <footer>
-        <p id="copyright">copyright date name</p>
-        <p class="highlight" id="lastmodified"></p>
-        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-    </footer>
+    <br>
+    <form name="contact" action="#">
+        <table>
+            <caption>Table 1: Account Feature Comparison</caption>
+            <thead>
+                <tr>
+                    <th colspan="2" scope="colgroup">
+                        <h3>Contact Us</h3>
+                        <div id="formmessage"></div>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><label for="fullname">Full Name:</label></td>
+                    <td><input type="text" id="fullname" name="fullname" required placeholder="Your full name" /></td>
+                </tr>
+                <tr>
+                    <td> <label for="email">Email address:</label>
+                    </td>
+                    <td><input type="email" id="email" name="email" required></td>
+                </tr>
+                <tr>
+                    <td> <label for="rating">Page Rating [ <span id="ratingval"></span> ]:</label>
+                    </td>
+                    <td>
+                        <div class="rangecontainer">
+                            <input type="range" min="1" max="10" id="rating" name="rating" list="ten"
+                                required="required">
+                            <div class="ratinglabels">
+                                <span class="ratevalue">1</span>
+                                <span class="ratevalue">2</span>
+                                <span class="ratevalue">3</span>
+                                <span class="ratevalue">4</span>
+                                <span class="ratevalue">5</span>
+                                <span class="ratevalue">6</span>
+                                <span class="ratevalue">7</span>
+                                <span class="ratevalue">8</span>
+                                <span class="ratevalue">9</span>
+                                <span class="ratevalue">10</span>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="password" id="username" name="username" minlength="5" maxlength="12"
+                            pattern="[a-zA-Z0-9]*" required placeholder="5-12 characters" /></td>
+                </tr>
+                <tr>
+                    <td><label for="username2">Re-enter Username:</label></td>
+                    <td>
+                        <input type="password" id="username2" name="username2" />
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="submit" name="submit" type="submit" value="Contact Us"
+                            onclick="return displayForm();">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
-    <script src="scripts/hamburger.js"></script>
-    <script src="scripts/getDates.js"></script>
-    <script src="scripts/darkmode.js"></script>
-    <script src="scripts/counter.js"></script>
+        <div class="span" id="displayform">
+            <table>
+                <caption>Figure 1: Example HTML Output</caption>
+                <tr>
+                    <td class="head">Form Input</td>
+                </tr>
+                <tr>
+                    <td class="body">
+                        <table>
+                            <tr>
+                                <th scope="col">Field</th>
+                                <th scope="col">Value</th>
+                            </tr>
+
+                            <tbody>
+                                <tr id="noborder">
+                                    <td class="left" id="noborder">Name:</td>
+                                    <td class="right">
+                                        <div id="displayarea1"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">Email:</td>
+                                    <td class="right">
+                                        <div id="displayarea2"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">Rating:</td>
+                                    <td class="right">
+                                        <div id="displayarea3"></div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="left">Username:</td>
+                                    <td class="right">
+                                        <div id="displayarea4"></div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <footer>
+            <p id="copyright">copyright date name</p>
+            <p class="highlight" id="lastmodified"></p>
+            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/getDates.js"></script>
+        <script src="scripts/darkmode.js"></script>
+        <script src="scripts/counter.js"></script>
+        <script src="scripts/contact.js"></script>
 
 </body>
 
