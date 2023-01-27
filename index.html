@@ -142,7 +142,7 @@
                 <tr>
                     <td> <label for="email">Email address:</label>
                     </td>
-                    <td><input type="email" id="email" name="email" required></td>
+                    <td><input type="email" id="email" name="email" required /></td>
                 </tr>
                 <tr>
                     <td> <label for="rating">Page Rating [ <span id="ratingval"></span> ]:</label>
@@ -169,12 +169,14 @@
                 <tr>
                     <td><label for="username">Username:</label></td>
                     <td><input type="password" id="username" name="username" minlength="5" maxlength="12"
-                            pattern="[a-zA-Z0-9]*" required placeholder="5-12 characters" /></td>
+                            pattern="[a-zA-Z0-9]*\d" required placeholder="5-12 characters" />
+                    </td>
                 </tr>
                 <tr>
                     <td><label for="username2">Re-enter Username:</label></td>
                     <td>
-                        <input type="password" id="username2" name="username2" />
+                        <input type="password" id="username2" name="username2" minlength="5" maxlength="12"
+                            pattern="[a-zA-Z0-9]*\d" required placeholder="repeat username" />
                     </td>
                 </tr>
                 <tr>

@@ -29,8 +29,8 @@ function checkSame() {
 	}
 }
 
-function displayForm()
-{
+function displayForm(){
+	if ((un1.value == un2.value) && (un1.value != "")) {
 document.getElementById("displayform").style.display = "block";
 document.getElementById("displayarea1").innerHTML = document.getElementById("fullname").value; 
 document.getElementById("fullname").value = "";
@@ -40,4 +40,5 @@ document.getElementById("displayarea3").innerHTML = document.getElementById("rat
 document.getElementById("rating").value = "";
 document.getElementById("displayarea4").innerHTML = document.getElementById("username").value; 
 document.getElementById("username").value = "";
+}
 }
