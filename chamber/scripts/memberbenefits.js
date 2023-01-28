@@ -4,7 +4,7 @@ function memberBenefits(value){
 	document.getElementById("level").innerHTML = "<i style='text-transform:uppercase; color:"+value+";'>"+value+" </i>";
 
 	if(value === "npmembership"){
-		document.getElementById("membercost").innerHTML = "$20.00/Year";
+		document.getElementById("membercost").innerHTML = "No Fee";
 		document.getElementById("memberinfo").innerHTML =  "Non-Profit level gives you access to all of the member luncheons each month and a paper certificate";
 	}
 	else if(value === "gold"){
