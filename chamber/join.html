@@ -17,7 +17,7 @@
     <meta property="og:title" content="Indianola Chamber of Commerce Home Page">
     <meta property="og:type" content="website">
     <meta property="og:img" content="images/balloons.webp">
-    <meta property="og:url" content="https://celestebickham.github.io/wdd230/chamber/index.html" />
+    <meta property="og:url" content="https://celestebickham.github.io/wdd230/chamber/index.html">
 
     <script src="https://kit.fontawesome.com/0988bb3aac.js" crossorigin="anonymous"></script>
 </head>
@@ -72,35 +72,37 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td><label for="first">First Name: </label></td>
+                                <td class="formalign"><label for="first">First Name: </label></td>
                                 <td><input type="text" name="first" id="first" required></td>
                             </tr>
                             <tr>
-                                <td><label for="last">Last Name: </label></td>
+                                <td class="formalign"><label for="last">Last Name: </label></td>
                                 <td><input type="text" name="last" id="last" required></td>
                             </tr>
                             <tr>
-                                <td><label for="title">Business Position Title: </label></td>
-                                <td><input type="text" name="title" minlength="7" pattern="[a-zA-Z0-9 -]+"></td>
+                                <td class="formalign"><label for="title">Business Position Title: </label></td>
+                                <td><input type="text" name="title" id="title" minlength="7" pattern="[a-zA-Z0-9 -]+">
+                                </td>
                             </tr>
 
                             <tr>
-                                <td><label for="email">Email: </label></td>
-                                <td><input type="email" id="email" name="email" required></td>
+                                <td class="formalign"><label for="email">Email: </label></td>
+                                <td><input type="email" id="email" name="email" placeholder="youremail@email.com"
+                                        required></td>
                             </tr>
 
                             <tr>
-                                <td><label for="cell">Cell Phone No: </label></td>
+                                <td class="formalign"><label for="cell">Cell Phone No: </label></td>
                                 <td><input type="tel" id="cell" name="cell" required></td>
                             </tr>
 
                             <tr>
-                                <td><label for="business">Business Name/Title: </label></td>
+                                <td class="formalign"><label for="business">Business Name/Title: </label></td>
                                 <td><input type="text" id="business" name="business" required></td>
                             </tr>
 
                             <tr>
-                                <td><label for="member">Membership Level: </label></td>
+                                <td class="formalign"><label for="member">Membership Level: </label></td>
                                 <td><select name="member" id="member" onChange="memberBenefits(this.value)">
                                         <option value="">Select a Member Level</option>
                                         <option value="gold">Gold</option>
@@ -111,7 +113,7 @@
                             </tr>
 
                             <tr>
-                                <td><label for="description">Business Description: </label></td>
+                                <td class="formalign"><label for="description">Business Description: </label></td>
                                 <td><textarea name="description" id="description"></textarea></td>
                             </tr>
 
@@ -128,7 +130,7 @@
         </div>
         <div>
             <section id="memberlevel">
-                <div id="displayform" class="member info">
+                <div id="displayform" class="memberinfo">
                     <h2>Member Level Information</h2>
                     <dl>
                         <dt><span id="level">Select a level from the form on the left</span></dt>
@@ -154,6 +156,7 @@
     <script src="scripts/darkmode.js"></script>
     <script src="scripts/getdates.js"></script>
     <script src="scripts/menu.js"></script>
+    <script src="scripts/memberbenefits.js"></script>
 </body>
 
 </html>
