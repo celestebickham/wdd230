@@ -59,49 +59,49 @@
 
     <main class="grid-container">
         <div class="grid-item">
-            <section id="join">
+            <section>
+                <h2>Join the Chamber</h2>
                 <form action="thankyou.html" method="get">
                     <table>
                         <thead>
                             <tr>
                                 <th colspan="2" scope="colgroup">
-                                    <h3>Join the Chamber</h3>
+                                    Fill out the form below to join.
                                 </th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td><label for="first">First Name: </label></td>
-                                <td><input type="textbox" name="first" id="" width="20" required></td>
+                                <td><input type="text" name="first" id="first" required></td>
                             </tr>
                             <tr>
                                 <td><label for="last">Last Name: </label></td>
-                                <td><input type="textbox" name="last" id="" width="20" required></td>
+                                <td><input type="text" name="last" id="last" required></td>
                             </tr>
                             <tr>
                                 <td><label for="title">Business Position Title: </label></td>
-                                <td><input type="textbox" name="title" minlength="7" pattern="[a-zA-Z0-9 -]+" width="20"
-                                        required></td>
+                                <td><input type="text" name="title" minlength="7" pattern="[a-zA-Z0-9 -]+"></td>
                             </tr>
 
                             <tr>
                                 <td><label for="email">Email: </label></td>
-                                <td><input type="email" name="email" width="20" required></td>
+                                <td><input type="email" id="email" name="email" required></td>
                             </tr>
 
                             <tr>
                                 <td><label for="cell">Cell Phone No: </label></td>
-                                <td><input type="tel" name="cell" width="20" required></td>
+                                <td><input type="tel" id="cell" name="cell" required></td>
                             </tr>
 
                             <tr>
                                 <td><label for="business">Business Name/Title: </label></td>
-                                <td><input type="textbox" name="business" required></td>
+                                <td><input type="text" id="business" name="business" required></td>
                             </tr>
 
                             <tr>
                                 <td><label for="member">Membership Level: </label></td>
-                                <td><select name="member" onChange="memberBenefits(this.value)">
+                                <td><select name="member" id="member" onChange="memberBenefits(this.value)">
                                         <option value="">Select a Member Level</option>
                                         <option value="gold">Gold</option>
                                         <option value="silver">Silver</option>
@@ -112,46 +112,41 @@
 
                             <tr>
                                 <td><label for="description">Business Description: </label></td>
-                                <td><textarea name="description" cols="20" rows="4"></textarea></td>
+                                <td><textarea name="description" id="description"></textarea></td>
                             </tr>
 
                             <tr>
                                 <td></td>
                                 <td><input type="hidden" name="datetime" id="loadtime">
-                                    <input type="submit" value="Submit to Joining the Chamber">
+                                    <input type="submit" value="Join the Chamber">
                                 </td>
                             </tr>
-
+                        </tbody>
+                    </table>
+                </form>
+            </section>
         </div>
-        </tbody>
-        </table>
-        </form>
-
-        </section>
-        </div>
-        <div class="grid-item">
-            <section class="weather">
-                <div id="displayform" class="span">
+        <div>
+            <section id="memberlevel">
+                <div id="displayform" class="member info">
+                    <h2>Member Level Information</h2>
                     <dl>
-                        <dt><span id="level"></span> Member Level Information</dt>
-                        <dd id="memberinfo">Select a value from the form on the left</dd>
+                        <dt><span id="level">Select a level from the form on the left</span></dt>
+                        <dd id="memberinfo"></dd>
                         <dt>Cost</dt>
                         <dd id="membercost">-</dd>
                     </dl>
                 </div>
             </section>
         </div>
-
     </main>
     <footer>
-
         <ul style="list-style-type:none;">
             <li>Celeste Bickham</li>
             <li>Phone: 555-555-5555</li>
             <li>Email: contact.us@gmail.com</li>
             <li>Wdd 230</li>
         </ul>
-
         <p class="highlight" id="lastmodified"></p>
     </footer>
 
