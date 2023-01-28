@@ -31,7 +31,7 @@
     #phototitle {
         position: relative;
         top: 80px;
-        background: radial-gradient(#fff, l#2196F3);
+        background: radial-gradient(#fff, #2196F3);
         border: 1px solid rgba(0, 0, 0, .75);
         box-shadow: 0 0 3rem #fff;
         opacity: 0.70;
