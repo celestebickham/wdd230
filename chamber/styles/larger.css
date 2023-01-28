@@ -1,6 +1,5 @@
 @media screen and (min-width: 650px) {
 
-
     body {
         float: left;
     }
@@ -8,34 +7,31 @@
     main {
         max-width: 900px;
         min-width: 400px;
-        display: grid;
-        grid-gap: 5px;
-        grid-template-areas: 'central weather'
-            'join sidebar';
         margin: 1rem auto;
         padding: 1px;
     }
 
-    .central {
-        grid-area: 'central';
+    li {
+        line-height: 1.4;
     }
 
-    .join {
-        grid-template-areas: 'join';
+    .grid-container {
+        display: grid;
+        grid-template: 150px / auto auto;
+        grid-gap: 5px;
+        background-color: #2196F3;
+        padding: 5px;
     }
 
-    .weather {
-        grid-area: 'weather';
-    }
-
-    .sidebar {
-        grid-area: 'sidebar';
+    .grid-item {
+        text-align: left;
+        height: auto;
     }
 
     #phototitle {
         position: relative;
         top: 80px;
-        background: radial-gradient(#fff, lightblue);
+        background: radial-gradient(#fff, l#2196F3);
         border: 1px solid rgba(0, 0, 0, .75);
         box-shadow: 0 0 3rem #fff;
         opacity: 0.70;
@@ -56,10 +52,15 @@
         padding: 20px;
     }
 
+    footer li {
+        line-height: normal;
+    }
+
     section {
         padding: 1px;
         list-style-type: none;
         border: 2px solid rgb(25, 63, 92);
+        background-color: white;
     }
 
     .menu {

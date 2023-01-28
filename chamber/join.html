@@ -57,87 +57,90 @@
         <h2>WDD 230: Course Activity Portal</h2>
     </header>
 
-    <main>
-        <section id="join">
-            <form action="thankyou.html" method="get">
-                <table>
-                    <thead>
-                        <tr>
-                            <th colspan="2" scope="colgroup">
-                                <h3>Join the Chamber</h3>
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td><label for="first">First Name: </label></td>
-                            <td><input type="textbox" name="first" id="" width="20" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="last">Last Name: </label></td>
-                            <td><input type="textbox" name="last" id="" width="20" required></td>
-                        </tr>
-                        <tr>
-                            <td><label for="title">Business Position Title: </label></td>
-                            <td><input type="textbox" name="title" minlength="7" pattern="[a-zA-Z0-9 -]+" width="20"
-                                    required></td>
-                        </tr>
+    <main class="grid-container">
+        <div class="grid-item">
+            <section id="join">
+                <form action="thankyou.html" method="get">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2" scope="colgroup">
+                                    <h3>Join the Chamber</h3>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label for="first">First Name: </label></td>
+                                <td><input type="textbox" name="first" id="" width="20" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="last">Last Name: </label></td>
+                                <td><input type="textbox" name="last" id="" width="20" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="title">Business Position Title: </label></td>
+                                <td><input type="textbox" name="title" minlength="7" pattern="[a-zA-Z0-9 -]+" width="20"
+                                        required></td>
+                            </tr>
 
-                        <tr>
-                            <td><label for="email">Email: </label></td>
-                            <td><input type="email" name="email" width="20" required></td>
-                        </tr>
+                            <tr>
+                                <td><label for="email">Email: </label></td>
+                                <td><input type="email" name="email" width="20" required></td>
+                            </tr>
 
-                        <tr>
-                            <td><label for="cell">Cell Phone No: </label></td>
-                            <td><input type="tel" name="cell" width="20" required></td>
-                        </tr>
+                            <tr>
+                                <td><label for="cell">Cell Phone No: </label></td>
+                                <td><input type="tel" name="cell" width="20" required></td>
+                            </tr>
 
-                        <tr>
-                            <td><label for="business">Business Name/Title: </label></td>
-                            <td><input type="textbox" name="business" required></td>
-                        </tr>
+                            <tr>
+                                <td><label for="business">Business Name/Title: </label></td>
+                                <td><input type="textbox" name="business" required></td>
+                            </tr>
 
-                        <tr>
-                            <td><label for="member">Membership Level: </label></td>
-                            <td><select name="member" onChange="memberBenefits(this.value)">
-                                    <option value="">Select a Member Level</option>
-                                    <option value="gold">Gold</option>
-                                    <option value="silver">Silver</option>
-                                    <option value="bronze">Bronze</option>
-                                    <option value="npmembership">Non-Profit Membership</option>
-                                </select></td>
-                        </tr>
+                            <tr>
+                                <td><label for="member">Membership Level: </label></td>
+                                <td><select name="member" onChange="memberBenefits(this.value)">
+                                        <option value="">Select a Member Level</option>
+                                        <option value="gold">Gold</option>
+                                        <option value="silver">Silver</option>
+                                        <option value="bronze">Bronze</option>
+                                        <option value="npmembership">Non-Profit Membership</option>
+                                    </select></td>
+                            </tr>
 
-                        <tr>
-                            <td><label for="description">Business Description: </label></td>
-                            <td><textarea name="description" cols="20" rows="4"></textarea></td>
-                        </tr>
+                            <tr>
+                                <td><label for="description">Business Description: </label></td>
+                                <td><textarea name="description" cols="20" rows="4"></textarea></td>
+                            </tr>
 
-                        <tr>
-                            <td></td>
-                            <td><input type="hidden" name="datetime" id="loadtime">
-                                <input type="submit" value="Submit to Joining the Chamber">
-                            </td>
-                        </tr>
+                            <tr>
+                                <td></td>
+                                <td><input type="hidden" name="datetime" id="loadtime">
+                                    <input type="submit" value="Submit to Joining the Chamber">
+                                </td>
+                            </tr>
 
-                        </div>
-                    </tbody>
-                </table>
-            </form>
+        </div>
+        </tbody>
+        </table>
+        </form>
 
         </section>
-
-        <section class="weather">
-            <div id="displayform" class="span">
-                <dl>
-                    <dt><span id="level"></span> Member Level Information</dt>
-                    <dd id="memberinfo">Select a value from the form on the left</dd>
-                    <dt>Cost</dt>
-                    <dd id="membercost">-</dd>
-                </dl>
-            </div>
-        </section>
+        </div>
+        <div class="grid-item">
+            <section class="weather">
+                <div id="displayform" class="span">
+                    <dl>
+                        <dt><span id="level"></span> Member Level Information</dt>
+                        <dd id="memberinfo">Select a value from the form on the left</dd>
+                        <dt>Cost</dt>
+                        <dd id="membercost">-</dd>
+                    </dl>
+                </div>
+            </section>
+        </div>
 
     </main>
     <footer>
