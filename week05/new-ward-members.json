@@ -1,0 +1,34 @@
+
+{
+    "familyName": "Jones",
+    "moveInDate": "January 20, 2023",
+    "numberOfRecords": 5,
+    "visitedByBishopric": true,
+    "individualFamilyMembers": [
+    {
+        "name": "Jeff",
+        "gender": "Male",
+        "birthdate": "February 21, 1986"
+    },
+    {
+        "name": "Linda",
+        "gender": "Female",
+        "birthdate": "March 22, 1985"
+    },
+    {
+        "name": "George",
+        "gender": "Male",
+        "birthdate": "April 23, 2013"
+    },
+    {
+        "name": "Elizabeth",
+        "gender": "Female",
+        "birthdate": "May 24, 2015"
+    },
+    {
+        "name": "Aurora",
+        "gender": "Female",
+        "birthdate": "June 25, 2017"
+    }
+]
+}
