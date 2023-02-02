@@ -1,4 +1,4 @@
-const base = "../activity.json";
+const base = "https://celestebickham.github.io/wdd230/activity.json";
 let value="";
 // Using fetch to get data
 
