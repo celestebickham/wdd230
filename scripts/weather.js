@@ -24,7 +24,7 @@ window.addEventListener('load', () => {
           const { humidity } = data.main;
           const { speed } = data.wind;
 
-          const iconUrl = `http://openweathermap.org/img/w/${icon}.png`;
+          const iconUrl = `https://openweathermap.org/img/w/${icon}.png`;
 
           // Interacting with DOM to show data
           weatherIcon.src = iconUrl;
