@@ -18,5 +18,3 @@ numVisits++;
 localStorage.setItem("visits-ls", numVisits);
 // show todays date.
 //todayDisplay.textContent = Date.now();
-
-// You can view the localStorage data using the Applications panel in the browsers's DevTools.

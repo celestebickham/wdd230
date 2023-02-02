@@ -21,7 +21,6 @@ const closelink = '</a>'
 
 function show(data) {
     let seedata = data;
-    //console.log(seedata);
     // Setting innerHTML as tab variable
     
 let showeek1 = "";
