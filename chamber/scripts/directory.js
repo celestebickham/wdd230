@@ -1,5 +1,5 @@
 
-const url = "./directory.json";
+const url = "https://celestebickham.github.io/wdd230/chamber/directory.json";
 let filterval = "";
 
 var sPath = window.location.pathname;
