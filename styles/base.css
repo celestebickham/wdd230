@@ -249,3 +249,13 @@ li a.open {
     cursor: pointer;
     text-align: right;
 }
+
+.weather {
+    width: 50%;
+    border: 1px solid #111;
+    text-align: center;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+}

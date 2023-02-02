@@ -66,48 +66,14 @@
 
         <section class="learning">
             <h3>Learning Activities:</h3>
-            <li>
-            <li>Week 01:
-                <ul>
-                    <li><a href="week01/holygrail.html">Holy Grail</a></li>
-                    <li><a href="week01/media-query.html">Media Query</a></li>
-                    <li><a href="https://codepen.io/celestebickham/pen/qByqrRj">Code Pen - Applied JavaScript
-                            Activity</a></li>
-                </ul>
-            </li>
-            <li>Week 02:
-                <ul>
-                    <li><a href="week02/design.html">Design</a></li>
-                    <li><a href="https://codepen.io/celestebickham/pen/QWBpYjX">Code Pen - Responsive Menu</a></li>
-                    <li><a href="week02/bom.html">Book of Mormon Top 25</a></li>
-                    <li><a href="chamber/index.html">Chamber of Commerce</a></li>
-                </ul>
-            </li>
-            <li>Week 03:
-                <ul>
-                    <li><a href="week03/images/landscape.webp">WebP</a></li>
-                    <li><a href="week03/lazyload.html">Lazy Load</a></li>
-                    <li><a href="week03/bom.html">Book of Mormon</a></li>
-                </ul>
-            </li>
-            <li>Week 04:
-                <ul>
-                    <li><a href="https://codepen.io/celestebickham/pen/eYjVPpR">Code Pen-Pseudo Classes</a></li>
-                    <li><a href="week04/images/screenshot-combinators.png">Screenshot Combinators</a></li>
-                    <li><a href="week04/tablebuild.html">Table Build</a></li>
-                    <li><a href="week04/form-start/index.html">HTML Form</a></li>
-                </ul>
-            </li>
-            <li>Week 05:
-                <ul>
-                    <li><a href="https://codepen.io/celestebickham/pen/MWBqoBp">Code Pen-Pseudo Elements</a></li>
-                    <li><a href="week05/new-ward-members.json">New Ward Members</a></li>
-                    <li><a href="week05/prophets.html">Latter Day Prophets</a></li>
-                    <li><a href="week05/weather.html">Weather</a></li>
-                </ul>
-            </li>
-            <li>Week 06:</li>
+            <ul>
+                <li id="links1"></li>
+                <li id="links2"></li>
+                <li id="links3"></li>
+                <li id="links4"></li>
+                <li id="links5"></li>
             </ul>
+
         </section>
         <section class="project" id="darkmode1">
             <h3>Project:</h3>
@@ -119,6 +85,17 @@
         </section>
         <section class="information" id="darkmode2">
             <h3>Information:</h3>
+            <div class="weather">
+                <img id="weather-icon" src="images/cloud.png" alt="weather">
+                <div id="location">Unable to Fetch Weather</div>
+                <div class="desc">No Information Available.</div>
+                <div class="circle"></div>
+                <div class="f">Error</div>
+                <div>Wind: <span class="winds">No Information Available</span></div>
+                <div>Humidity: <span class="humid">No Information Available</span></div>
+                <br>
+            </div>
+            <br>
         </section>
     </main>
 
@@ -129,6 +106,7 @@
 
     </div>
 
+
     <br>
     <form name="contact" action="#">
         <table>
@@ -136,7 +114,7 @@
             <thead>
                 <tr>
                     <th colspan="2" scope="colgroup">
-                        <h3>Contact Us</h3>
+                        <b>Contact Send Us a Message</b>
                         <div id="formmessage"></div>
                     </th>
                 </tr>
@@ -144,46 +122,45 @@
             <tbody>
                 <tr>
                     <td><label for="fullname">Full Name:</label></td>
-                    <td><input type="text" id="fullname" name="fullname" required placeholder="Your full name" /></td>
+                    <td><input type="text" id="fullname" name="fullname" required placeholder="Your full name"></td>
                 </tr>
                 <tr>
                     <td> <label for="email">Email address:</label>
                     </td>
-                    <td><input type="email" id="email" name="email" required /></td>
+                    <td><input type="email" id="email" name="email" placeholder="youremail@email.com" required></td>
                 </tr>
                 <tr>
                     <td> <label for="rating">Page Rating [ <span id="ratingval"></span> ]:</label>
                     </td>
                     <td>
                         <div class="rangecontainer">
-                            <input type="range" min="1" max="10" id="rating" name="rating" list="ten"
-                                required="required">
-                            <div class="ratinglabels">
-                                <span class="ratevalue">1</span>
-                                <span class="ratevalue">2</span>
-                                <span class="ratevalue">3</span>
-                                <span class="ratevalue">4</span>
-                                <span class="ratevalue">5</span>
-                                <span class="ratevalue">6</span>
-                                <span class="ratevalue">7</span>
-                                <span class="ratevalue">8</span>
-                                <span class="ratevalue">9</span>
-                                <span class="ratevalue">10</span>
-                            </div>
+                            <input type="range" id="rating" name="rating" min="0" max="10">
+                            <datalist class="ratinglabels">
+                                <option value="1" class="ratevalue">
+                                <option value="2" class="ratevalue">
+                                <option value="3" class="ratevalue">
+                                <option value="4" class="ratevalue">
+                                <option value="5" class="ratevalue">
+                                <option value="6" class="ratevalue">
+                                <option value="7" class="ratevalue">
+                                <option value="8" class="ratevalue">
+                                <option value="9" class="ratevalue">
+                                <option value="10" class="ratevalue">
+                            </datalist>
                         </div>
                     </td>
                 </tr>
                 <tr>
                     <td><label for="username">Username:</label></td>
                     <td><input type="password" id="username" name="username" minlength="5" maxlength="12"
-                            pattern="[a-zA-Z0-9]*\d" required placeholder="5-12 characters" />
+                            pattern="[a-zA-Z0-9]*\d" required placeholder="5-12 characters">
                     </td>
                 </tr>
                 <tr>
                     <td><label for="username2">Re-enter Username:</label></td>
                     <td>
                         <input type="password" id="username2" name="username2" minlength="5" maxlength="12"
-                            pattern="[a-zA-Z0-9]*\d" required placeholder="repeat username" />
+                            pattern="[a-zA-Z0-9]*\d" required placeholder="repeat username">
                     </td>
                 </tr>
                 <tr>
@@ -194,65 +171,68 @@
                 </tr>
             </tbody>
         </table>
+    </form>
 
-        <div class="span" id="displayform">
-            <table>
-                <caption>Figure 1: Example HTML Output</caption>
-                <tr>
-                    <td class="head">Form Input</td>
-                </tr>
-                <tr>
-                    <td class="body">
-                        <table>
+    <div class="span" id="displayform">
+        <table>
+            <caption>Figure 1: Example HTML Output</caption>
+            <tr>
+                <td class="head">Form Input</td>
+            </tr>
+            <tr>
+                <td class="body">
+                    <table>
+                        <tr>
+                            <th scope="col">Field</th>
+                            <th scope="col">Value</th>
+                        </tr>
+
+                        <tbody>
                             <tr>
-                                <th scope="col">Field</th>
-                                <th scope="col">Value</th>
+                                <td class="left" id="noborder">Name:</td>
+                                <td class="right">
+                                    <div id="displayarea1"></div>
+                                </td>
                             </tr>
+                            <tr>
+                                <td class="left">Email:</td>
+                                <td class="right">
+                                    <div id="displayarea2"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">Rating:</td>
+                                <td class="right">
+                                    <div id="displayarea3"></div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="left">Username:</td>
+                                <td class="right">
+                                    <div id="displayarea4"></div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                            <tbody>
-                                <tr id="noborder">
-                                    <td class="left" id="noborder">Name:</td>
-                                    <td class="right">
-                                        <div id="displayarea1"></div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="left">Email:</td>
-                                    <td class="right">
-                                        <div id="displayarea2"></div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="left">Rating:</td>
-                                    <td class="right">
-                                        <div id="displayarea3"></div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="left">Username:</td>
-                                    <td class="right">
-                                        <div id="displayarea4"></div>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                </td>
+            </tr>
+        </table>
+    </div>
 
-                    </td>
-                </tr>
-            </table>
-        </div>
+    <footer>
+        <p id="copyright">copyright date name</p>
+        <p class="highlight" id="lastmodified"></p>
+        <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+    </footer>
 
-        <footer>
-            <p id="copyright">copyright date name</p>
-            <p class="highlight" id="lastmodified"></p>
-            <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-        </footer>
-
-        <script src="scripts/hamburger.js"></script>
-        <script src="scripts/getDates.js"></script>
-        <script src="scripts/darkmode.js"></script>
-        <script src="scripts/counter.js"></script>
-        <script src="scripts/contact.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/darkmode.js"></script>
+    <script src="scripts/counter.js"></script>
+    <script src="scripts/contact.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/activity.js"></script>
 
 </body>
 

@@ -1,0 +1,91 @@
+{
+	"week01":[
+		{"weekname":"week01",
+		"url":"week01/holygrail.html",
+		"title":"Holy Grail"
+		},
+		{"weekname":"week01",
+		"url":"week01/media-query.html",
+		"title":"Media Query"
+		},
+		{"weekname":"week01",
+		"url":"https://codepen.io/celestebickham/pen/qByqrRj",
+		"title":"Code Pen - Applied JavaScript"
+		}
+		]
+	,
+	"week02":[
+		{"weekname":"week02",
+		"url":"week02/design.html",
+		"title":"Holy Grail"
+		},
+		{"weekname":"week02",
+		"url":"https://codepen.io/celestebickham/pen/QWBpYjX",
+		"title":"Code Pen"
+		},
+		{"weekname":"week02",
+		"url":"week02/bom.html",
+		"title":"Book of Mormon"
+		},
+        {"weekname":"week02",
+		"url":"chamber/index.html",
+		"title":"Chamber of Commerce"
+		}
+		]
+	,
+	"week03":[
+		{"weekname":"week03",
+		"url":"week03/images/landscape.webp",
+		"title":"WebP"
+		},
+		{"weekname":"week03",
+		"url":"week03/lazyload.html",
+		"title":"Lazy Load"
+		},
+        {"weekname":"week03",
+		"url":"week03/bom.html",
+		"title":"Book of Mormon"
+		}
+		]
+	,
+	"week04":[
+		{"weekname":"week04",
+		"url":"https://codepen.io/celestebickham/pen/eYjVPpR",
+		"title":"Code Pen"
+		},
+		{"weekname":"week04",
+		"url":"week04/images/screenshot-combinators.png",
+		"title":"Screenshot Combinators"
+		},
+		{"weekname":"week04",
+		"url":"week04/tablebuild.html",
+		"title":"Table Build"
+		},
+		{"weekname":"week04",
+		"url":"week04/form-start/index.html",
+		"title":"HTML Form"
+		}
+		]
+	,
+	"week05":[
+
+		{"weekname":"week05",
+		"url":"https://codepen.io/celestebickham/pen/MWBqoBp",
+		"title":"Code Pen-Pseudo Elements"
+		},
+		{"weekname":"week05",
+		"url":"week05/new-ward-members.json",
+		"title":"New Ward Members"
+		},
+		{"weekname":"week05",
+		"url":"week05/prophets.html",
+		"title":"Latter Day Prophets"
+		},
+		{"weekname":"week05",
+		"url":"week05/weather.html",
+		"title":"Weather"
+		}
+		]
+	
+
+}
