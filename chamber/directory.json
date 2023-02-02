@@ -1,0 +1,61 @@
+{"member":[{
+    "name" : "A&W",
+    "address" : "123 Main, Indianola IA",
+    "phone" : "515.961-1234",
+    "url" : "www.awrestaurants.com",    
+    "image" : "images/aw.webp",
+    "level" : "Gold",    
+    "other" : ""
+  },
+  {
+    "name" : "Fareway",
+    "address" : "987 Jefferson, Indianola IA",
+    "phone" : "515.961-8764",
+    "url" : "www.Fareway.com",    
+    "image" : "images/fareway.webp",
+    "level" : "Silver",    
+    "other" : ""
+  },{
+    "name" : "HyVee",
+    "address" : "123 Jefferson, Indianola IA",
+    "phone" : "515.961-9743",
+    "url" : "www.HyVee.com",    
+    "image" : "images/hyvee.webp",
+    "level" : "Bronze",    
+    "other" : ""
+  },{
+    "name" : "Acrea3d",
+    "address" : "888 Boston, Indianola IA",
+    "phone" : "515.961-3246",
+    "url" : "www.acrea3d.com",    
+    "image" : "images/acrea.webp",
+    "level" : "Non Profit",    
+    "other" : ""
+  },{
+    "name" : "Wynns",
+    "address" : "123 Boston, Indianola IA",
+    "phone" : "515.961-6654",
+    "url" : "winnspizzaandsteakhouse.com/",    
+    "image" : "images/winns.webp",
+    "level" : "Gold",    
+    "other" : ""
+  },{
+    "name" : "Crouse Cafe",
+    "address" : "321 Salem, Indianola IA",
+    "phone" : "515.961-1234",
+    "url" : "crousecafeia.com/",    
+    "image" : "images/crouse.webp",
+    "level" : "Silver",    
+    "other" : ""
+  },{
+    "name" : "Sports Page Grill",
+    "address" : "123 Salem, Indianola IA",
+    "phone" : "515.961-1234",
+    "url" : "thesportspagegrill.com/",    
+    "image" : "images/sportspage.webp",
+    "level" : "Bronze",    
+    "other" : ""
+  }
+
+]
+}

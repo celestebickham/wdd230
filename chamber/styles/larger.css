@@ -183,4 +183,61 @@
     memberlevel {
         width: 400px;
     }
+
+
+    .stats {
+        font-size: small;
+        width: fit-content;
+        padding: 10px;
+        border-bottom: 1px solid black;
+        box-shadow: 4px 3px 3px gray;
+        margin: 10px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        align-items: center;
+    }
+
+    .grid section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .grid section>* {
+        margin: 0.1rem;
+    }
+
+    .grid h3 {
+        font-family: "Caveat", cursive;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+    }
+
+    .list section img {
+        display: none;
+        /* smaller viewports only */
+    }
+
+
+    .banner {
+        text-align: center;
+        font-size: large;
+        font-weight: 600;
+        background-color: white;
+        display: none;
+        color: darkred;
+    }
+
 }
