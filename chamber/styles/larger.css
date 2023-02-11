@@ -240,4 +240,13 @@
         color: darkred;
     }
 
+    #grid {
+        margin-right: 10px;
+        padding: 24px;
+    }
+
+    #list {
+        padding: 24px;
+    }
+
 }

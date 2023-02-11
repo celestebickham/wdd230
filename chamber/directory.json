@@ -35,7 +35,7 @@
     "name" : "Wynns",
     "address" : "123 Boston, Indianola IA",
     "phone" : "515.961-6654",
-    "url" : "winnspizzaandsteakhouse.com/",    
+    "url" : "winnspizzaandsteakhouse.com",    
     "image" : "images/winns.webp",
     "level" : "Gold",    
     "other" : ""
@@ -43,7 +43,7 @@
     "name" : "Crouse Cafe",
     "address" : "321 Salem, Indianola IA",
     "phone" : "515.961-1234",
-    "url" : "crousecafeia.com/",    
+    "url" : "crousecafeia.com",    
     "image" : "images/crouse.webp",
     "level" : "Silver",    
     "other" : ""
@@ -51,7 +51,7 @@
     "name" : "Sports Page Grill",
     "address" : "123 Salem, Indianola IA",
     "phone" : "515.961-1234",
-    "url" : "thesportspagegrill.com/",    
+    "url" : "thesportspagegrill.com",    
     "image" : "images/sportspage.webp",
     "level" : "Bronze",    
     "other" : ""

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/weather.css">
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Indianola Chamber of Commerce Home Page">
@@ -57,6 +58,10 @@
         <h2>WDD 230: Course Activity Portal</h2>
     </header>
 
+    <div id="3" class="banner">
+        <p id="banner">Join us for our next meeting on Wednesday at 7:00pm</p>
+    </div>
+
     <main class="grid-container">
         <div class="grid-item">
             <section id="join">
@@ -64,25 +69,67 @@
                 <a href="join.html"><img src="images/join.webp" alt="Join Button"></a>
             </section>
         </div>
-        <div class="grid-item">
-            <section id="weather">
-                <h2>Weather</h2>
-                <p>Placeholder</p>
-                <br><br><br><br><br><br>
+
+        <div>
+            <section>
+                <div class="container">
+                    <div id="weather">Current Weather<br>
+                        <img id="weather-icon" src="images/cloud.png" alt="weather">
+                        <p class="f"></p>
+                        <p class="fl"></p>
+                    </div>
+                    <div class="info">
+                        <div id="dailyforcast">
+                            show the 7 day forecast
+                        </div>
+                    </div>
+                </div>
             </section>
         </div>
-        <div class="grid-item">
-            <section id="central">
-                <h2>Current Events</h2>
-                <p>Placeholder</p>
 
+        <div class="grid-item">
+            <section>
+                <h3>Current Events</h3>
+                <p>Fri, Jan 20, 2023<br>
+                    Free blood pressure screenings</p>
+
+                <br>
+                <p>The Phoenix Center drop-in hours<br>
+                    Fri, Jan 20, 2023</p>
+                <br>
+                <p>
+                    Saturday Stories at Indianola Public Library<br>
+                    Sat, Jan 21, 2023
+                </p><br>
+                <p>
+                    Minecraft Club at Indianola Public Library<br>
+                    Mon, Jan 23, 2023
+                </p><br>
+                <p>
+                    International Night: A Visit to Greece<br>
+                    Mon, Jan 23, 2023
+                </p><br>
+                <p>
+                    Storytime at Indianola Public Library<br>
+                    Tue, Jan 24, 2023
+                </p>
             </section>
         </div>
 
         <div class="grid-item">
-            <section id="sidebar">
-                <h2>Spotlight</h2>
-                <p>Placeholder</p>
+            <section>
+                <h3>Member Spotlight</h3>
+
+                <article class="grid">
+
+                    <section>
+
+                        <div class="cards">
+                        </div>
+                    </section>
+
+                </article>
+
             </section>
         </div>
 
@@ -100,8 +147,10 @@
     </footer>
 
     <script src="scripts/hamburger.js"></script>
-    <script src="scripts/darkmode.js"></script>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/directory.js"></script>
+    <script src="scripts/banner.js"></script>
 </body>
 
 </html>

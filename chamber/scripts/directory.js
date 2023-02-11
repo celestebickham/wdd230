@@ -4,9 +4,10 @@ let filterval = "";
 
 var sPath = window.location.pathname;
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
-if(sPage == "chamber.html"){
+if(sPage == "index.html"){
     filterval = "gold";
 }
+
 else {
     filterval = "all";
 }
@@ -16,7 +17,7 @@ const getDirectory = async (filter = filterval) => {
 	let company = await jsonFetch(url);
     switch (filter) {
 		case "gold":
-			company = company.filter((seedata) => seedata.level === "Gold");
+			company = company.filter((seedata) => (seedata.level === "Gold" || seedata.level === "Silver"));
 			break;
 		default:
 			break;
@@ -51,7 +52,7 @@ const displayDirectory = (company) => {
 		name.textContent = `${seedata.name}`;
 		address.innerHTML = ` ${seedata.address}`;
 		phone.innerHTML = ` ${seedata.phone}`;
-		url.innerHTML = `<a href="http://${seedata.url}">${seedata.url}</a>`;
+		url.innerHTML = `${seedata.url}`;
 		level.innerHTML = `${seedata.level} Member`;
 		//other.innerHTML = `<span class="label">Other:</span> ${seedata.other}`;
 

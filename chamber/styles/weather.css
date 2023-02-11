@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#location {
+    align-items: center;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.desc {
+    font-size: medium;
+    text-transform: capitalize;
+}
+
+#weather {
+    font-size: medium;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(251, 242, 133);
+}
+
+.forecast-day {
+    font-size: small;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 3px 3px gray;
+    text-transform: capitalize;
+}
