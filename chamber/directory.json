@@ -21,7 +21,7 @@
     "phone" : "515.961-9743",
     "url" : "www.HyVee.com",    
     "image" : "images/hyvee.webp",
-    "level" : "Bronze",    
+    "level" : "Silver",    
     "other" : ""
   },{
     "name" : "Acrea3d",
@@ -53,9 +53,26 @@
     "phone" : "515.961-1234",
     "url" : "thesportspagegrill.com",    
     "image" : "images/sportspage.webp",
-    "level" : "Bronze",    
+    "level" : "Gold",    
     "other" : ""
   }
-
+  ,{
+    "name" : "Kiya Koda",
+    "address" : "234 Jefferson, Indianola IA",
+    "phone" : "515.961-5544",
+    "url" : "kiyakoda.org",    
+    "image" : "images/kiyakoda.webp",
+    "level" : "Non Profit",    
+    "other" : ""
+  }
+  ,{
+    "name" : "YMCA",
+    "address" : "111 Jefferson, Indianola IA",
+    "phone" : "515.961-9843",
+    "url" : "ymca.org",    
+    "image" : "images/ymca.webp",
+    "level" : "Silver",    
+    "other" : ""
+  }
 ]
 }
