@@ -40,7 +40,6 @@ async function jsonFetch(url) {
 	return data.member;
 }
 
-
 const displayDirectory = (company) => {
 	const cards = document.querySelector("div.cards");
 	cards.innerHTML = "";

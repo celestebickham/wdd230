@@ -25,3 +25,6 @@ function memberBenefits(value){
 		document.getElementById("membercost").innerHTML = "A billion dollars	";
 	}
 }
+
+// uses the getdates.js to set the field value
+document.getElementById('loadtime').value =  lastmodified;
