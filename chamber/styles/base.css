@@ -45,7 +45,7 @@
     }
 
 
-    #phototitle {
+    .phototitle {
         position: relative;
         top: 80px;
         background: radial-gradient(#fff, #2196F3);
