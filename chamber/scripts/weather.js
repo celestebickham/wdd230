@@ -23,13 +23,12 @@ window.addEventListener('load', () => {
 
           const { temp } = data.current;
           const { description, icon } = data.current.weather[0];
-          const iconUrl = `http://openweathermap.org/img/wn/${icon}@2x.png`;
+          const iconUrl = `https://openweathermap.org/img/wn/${icon}@2x.png`;
           const fahrenheit = temp;
           const { feels_like }= data.current;
           const celsius = ((temp-32)*5)/9;
           // Interacting with DOM to show data
           weatherIcon.src = iconUrl;
-          //desc.textContent = `${description}`;
           tempF.textContent = `${fahrenheit.toFixed(0)}°F ${description}`;
           tempFeel.textContent = ` Feels Like ${feels_like.toFixed(0)}°F `;
 
@@ -64,7 +63,7 @@ window.addEventListener('load', () => {
 					    fday = `<div class="forecast-day">
 						    <p>${dayname}</p>
 						    <p><span class="ico-${icon}" title="${icon}"></span></p>
-                <img src="http://openweathermap.org/img/w/${icon}.png" alt="weather">
+                <img src="https://openweathermap.org/img/w/${icon}.png" alt="weather">
                 <p>${desc}</p>
                 <div class="forecast-day--temp">High ${max}<sup>°F</sup>  Low ${min}<sup>°F</sup></div>
 						    <div class="forecast-day--wind">Wind ${winddir} ${wind} MPH</div>

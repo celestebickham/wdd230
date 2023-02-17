@@ -1,4 +1,3 @@
-
 const url = "https://celestebickham.github.io/wdd230/chamber/directory.json";
 let filterval = "";
 
@@ -12,12 +11,22 @@ else {
     filterval = "all";
 }
 
-
+let randomstartlength = 0;
+let randomendlength = 9;
 const getDirectory = async (filter = filterval) => {
 	let company = await jsonFetch(url);
     switch (filter) {
 		case "gold":
 			company = company.filter((seedata) => (seedata.level === "Gold" || seedata.level === "Silver"));
+			randomendlength = Math.floor(Math.random() * 7);
+			
+			if (randomendlength <= 2){
+				randomstartlength =  0;
+				randomendlength = 2;
+			}
+			else {
+				randomstartlength = randomendlength-2;
+			}
 			break;
 		default:
 			break;
@@ -36,7 +45,8 @@ const displayDirectory = (company) => {
 	const cards = document.querySelector("div.cards");
 	cards.innerHTML = "";
 
-	company.forEach((seedata) => {
+	for (seedata = randomstartlength; seedata<randomendlength; seedata++)
+	{
 		let card = document.createElement("div");
         let stats = document.createElement("div");
 		stats.classList.add("stats");
@@ -46,20 +56,18 @@ const displayDirectory = (company) => {
 		let url = document.createElement("p");
 		let level = document.createElement("p");
 		let length = document.createElement("p");
-		//let other = document.createElement("p");
 		let image = document.createElement("img");
 
-		name.textContent = `${seedata.name}`;
-		address.innerHTML = ` ${seedata.address}`;
-		phone.innerHTML = ` ${seedata.phone}`;
-		url.innerHTML = `${seedata.url}`;
-		level.innerHTML = `${seedata.level} Member`;
-		//other.innerHTML = `<span class="label">Other:</span> ${seedata.other}`;
+		name.textContent = `${company[seedata].name}`;
+		address.innerHTML = ` ${company[seedata].address}`;
+		phone.innerHTML = ` ${company[seedata].phone}`;
+		url.innerHTML = `${company[seedata].url}`;
+		level.innerHTML = `${company[seedata].level} Member`;
 
-		image.setAttribute("src", seedata.image);
+		image.setAttribute("src", company[seedata].image);
 		image.setAttribute(
 			"alt",
-			`${seedata.name}`
+			`${company[seedata].name}`
 		);
 		image.setAttribute("loading", "lazy");
 		image.setAttribute("width", "150");
@@ -70,13 +78,10 @@ const displayDirectory = (company) => {
 		stats.appendChild(phone);
 		stats.appendChild(url);
 		stats.appendChild(level);
-		//stats.appendChild(other);
 
-		//card.appendChild(h2);
 		card.appendChild(stats);
-
 		cards.appendChild(card);
-	});
+	};
 };
 
 getDirectory();
